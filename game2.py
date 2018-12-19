@@ -9,10 +9,10 @@ click = True
 def checker(buttons):
 	global click
 	if buttons["text"] == " " and click == True:
-		buttons["text"] = "X"
+		buttons["text"] = "O"
 		click = False
 	elif buttons["text"] == " " and click == False:
-		buttons["text"] = "O"
+		buttons["text"] = "X"
 		click = True
 		
 	elif(button1["text"] == "X" and button2["text"] == "X" and button3["text"] == "X" or
